@@ -1,0 +1,253 @@
+/* Tipografias: 
+   *Titulos: font-family: "Poppins", sans-serif; 
+   *Contenido: font-family: "Schibsted Grotesk", sans-serif;
+   *Resaltado: font-family: "Ubuntu", sans-serif; */
+
+
+
+/* E S T I L O S  P A R A  T O D A  L A  P Á G I N A  ( U N I V E R S A L E S ) */
+/* Cuerpo de la página */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+/* Estilos para los textos */
+p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+
+
+/* E S T I L O S  P A R A  L A  V E R S I Ó N  M Ó V I L */
+/* Encabezado */
+header {
+  /* Despliegue flexible en linea con los elementos separados
+     por el mismo espacio y alineados al centro. */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Espacio de separación */
+  padding: 10px;
+}
+
+/* Información a destacar como si fuese un 'titulo' */
+.information-text {
+  /* Tipografía, tamaño y peso de la misma para los titulos */
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Barra de navegación */
+.menu-bar {
+  /* Alineación flexible de los elementos. */
+  display: flex;
+}
+
+/* Elementos de la barra de navegación no desplegables */
+.item-menu-bar:nth-child(1),
+.item-menu-bar:nth-child(2),
+.item-menu-bar:nth-child(3),
+.item-menu-bar:nth-child(4),
+.item-menu-bar:nth-child(5) {
+  display: none;
+}
+
+/* Elemento de contácto */
+.item-menu-bar:nth-child(6){
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+/* Sección de presentación */
+.flex-container {
+  /* Display flex con contenido organizado en columnas
+     y espaciado. */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  /* Relleno interno para separar el contenido del borde
+     de la página */
+  padding: 15px;
+}
+
+/* Fotografía de presentación */
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+}
+
+/* Texto resaltado para mostrar información importante */
+.highlighted-text {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Enlaces externos */
+.external-link {
+  font-style: italic;
+}
+
+/* Sección de redes sociales */
+.social-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Sección de 'sobre mi' */
+.title-section {
+  /* Tipografía, tamaño y peso de la misma para los titulos */
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+
+/* Sección de habilidades y pasatiempos */
+.title-section-center {
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.skills-hobbies-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill-hobbie-box {
+  border: 2px solid blue;
+  width: 198px;
+  height: 140px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.skill-hobbie-icon {
+  width: 66px;
+  height: 65px;
+  align-self: center;
+}
+
+.skill-hobbie-information {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* Sección de formación académica */
+.education-experience-box {
+  width: 100%;
+  height: auto;
+  border: 2px solid blue;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.education-image-cecyt {
+  width: 80%;
+  height: 300px;
+}
+
+.education-image {
+  width: 65%;
+  height: 180px;
+}
+
+
+/* Sección de experiencia profesional */
+.experience-image {
+  width: 100%;
+  height: 250px;
+}
+
+.experience-image ~ p {
+  align-self: flex-start;
+}
+
+.buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+
+.anchor-button {
+  width: 150px;
+  height: 20px;
+  border: 2px solid blue;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/* Sección de contacto */
+.contact-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+
+.input-form {
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.button-submit {
+  width: 180px;
+  height: 45px;
+  padding: 5px;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+
+
+/* Sección de pié de página */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Espacio para trabajar con 'media queries' */
+/* E S T I L O S  P A R A  L A  V E R S I Ó N  D E  T A B L E T */
+@media (min-width: 768px){
+
+}
+
+/* E S T I L O S  P A R A  L A  V E R S I Ó N  D E  E S C R I T O R I O  */
+@media (min-width: 1200px){
+  
+}

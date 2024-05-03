@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Brandon Daniel Garita Romero">
+  <meta name="description" content="Challenge ONE (Alura LATAM): Portafolio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./images/fav-icon.png">
+  <link rel="stylesheet" href="./styles/reset.css" type="text/css">
+  <link rel="stylesheet" href="./styles/style.css" type="text/css">
+
+  <!-- Tipografía para los titulos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Tipografía para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Tipografía para destacar elementos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <title>Challenge ONE: Portafolio</title>
+</head>
+
+<body>
+  <!-- Sección de encabezado. -->
+  <header>
+    <h3 class="information-text">Brandon Daniel Garita Romero</h3>
+
+    <nav>
+      <ul class="menu-bar">
+        <li class="item-menu-bar">
+          <a href="#about-me-section">Sobre mí</a>
+        </li>
+
+        <li class="item-menu-bar">
+          <a href="#hobbies-section">Habilidades</a>
+        </li>
+
+        <li class="item-menu-bar">
+          <a href="#skills-section">Pasatiempos</a>
+        </li>
+
+        <li class="item-menu-bar">
+          <a href="#">Formación</a>
+        </li>
+
+        <li class="item-menu-bar">
+          <a href="#">Proyectos</a>
+        </li>
+
+        <li class="item-menu-bar">
+          <a href="mailto:daniel.garita911@gmail.com">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Sección de presentación. -->
+  <section class="flex-container">
+    <img src="./images/profile-picture.png" alt="Foto de presentación" title="Foto de presentación"
+         class="profile-picture">
+
+
+    <h3 class="information-text">Hola, mi nombre es Daniel y soy Desarrollador WEB Front-End.</h3>
+
+    <p>Soy formado en el <span class="highlighted-text">Instituto Politecnico Nacional</span>
+       como <span class="highlighted-text">Técnico en Informática</span> (pasante),
+       y actualmente curso la carrera de <span class="highlighted-text">Ingeniería en Sistemas Computacionales</span> 
+       en la <a href="https://www.escom.ipn.mx/" target="_blank" class="external-link"
+                title="Escuela Superior de Cómputo">ESCOM</a>.
+    </p>
+
+    <div class="social-section">
+      <a href="https://github.com/danielGarita-MX?tab=repositories" target="_blank" 
+         class="external-lin" title="Mi GitHub">GitHub &#129125;</a>
+
+      <a href="https://www.linkedin.com/in/garita-romero-brandon-daniel-a305222b1" target="_blank" 
+         class="external-lin" title="Mi LinkedIn">LinkedIn &#129125;</a>
+
+      <a href="#">Curriculum &#129125;</a>
+    </div>
+  </section>
+
+
+  <!-- Sección de 'sobre mi'. -->
+  <section class="flex-container" id="about-me-section">
+    <h3 class="title-section">Sobre mi</h3>
+
+    <p>Soy una persona en constante aprendizaje, con enfoques en el desarrollo web 
+       <span class="highlighted-text">Front-End</span>.<br>  
+    </p>
+  </section>
+
+
+  <!-- Sección de habilidades y pasatiempos. -->
+  <div class="flex-container" id="hobbies-skills-section">
+    <!-- Sección de habilidades. -->
+    <section class="flex-container" id="skills-section">
+      <h3 class="title-section-center">Habilidades</h3>
+
+      <div class="skills-hobbies-container">
+        <div class="skill-hobbie-box">
+          <img src="./images/html-5.png" alt="Icono de HTML5" title="Icono por @Pixel perfect" class="skill-hobbie-icon">
+          
+          <p class="skill-hobbie-information">HTML5</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/css-3.png" alt="Icono de CSS3" title="Icono por @Pixel perfect" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">CSS3</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/javascript.png" alt="Icono de JavaScript" title="Icono por @edt.im" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">JavaScript</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/php.png" alt="Icono de PHP" title="Icono por @Freepik" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">PHP</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/c.png" alt="Icono de C" title="Icono por @High Quality Icons" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Lenguaje C</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/cpp.png" alt="Icono de C++" title="Icono por @Freepik" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Lenguaje C++</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/modeling.png" alt="Herramientas de modelado" title="Icono por @khld939" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Herramientas de modelado</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/documentation.png" alt="Herramientas de documentación" title="Icono por @Anggara" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Herramientas de documentación</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de pasatiempos. -->
+    <section class="flex-container"  id="hobbies-section">
+      <h3  class="title-section-center">Pasatiempos</h3>
+
+      <div class="skills-hobbies-container">
+        <div class="skill-hobbie-box">
+          <img src="./images/music.png" alt="Icono de Música" title="Icono por @Yellow Frog Factory" class="skill-hobbie-icon">
+          
+          <p class="skill-hobbie-information">Música</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/mobile-game.png" alt="Icono de videojuegos" title="Icono por @Muhammad Atif" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Videojuegos móviles</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/videoblogs.png" alt="Icono de videos" title="Icono por @Anggara" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Videoblogs</p>
+        </div>
+
+        <div class="skill-hobbie-box">
+          <img src="./images/walk.png" alt="Icono de paseo" title="Icono por @Freepik" class="skill-hobbie-icon">
+
+          <p class="skill-hobbie-information">Paseos cortos</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Sección de formación académica. -->
+  <section class="flex-container">
+    <h3 class="title-section-center">Formación académica</h3>
+
+    <div class="education-experience-box">
+      <p class="information-text">Instituto Politécnico Nacional</p>
+      <p>Cecyt 14 "Luis Enrique Erro"</p>
+      <img src="./images/cecyt.png" alt="Cecyt 14" title="Cecyt 14" class="education-image-cecyt">
+      <p class="information-text">Técnico en informática</p>
+      <p class="highlighted-text">Concluido</p>
+    </div>
+
+    <div class="education-experience-box">
+      <p class="information-text">Instituto Politécnico Nacional</p>
+      <p>Escuela Superior de Cómputo</p>
+      <img src="./images/escom.png" alt="ESCOM" title="Escuela Superior de Cómputo" class="education-image">
+      <p class="information-text">Ingeniería en sistemas cómputacionales</p>
+      <p class="highlighted-text">En curso</p>
+    </div>
+
+    <divc class="education-experience-box">
+      <p class="information-text">Oracle & Alura LATAM</p>
+      <p>Grupo 6 ONE-Oracle Next Education</p>
+      <img src="./images/one.png" alt="Oracle & Alura LATAM" title="Oracle & Alura LATAM" class="education-image">
+      <p class="information-text">Desarrollador Front-End Junior</p>
+      <p class="highlighted-text">En curso</p>
+    </divc>
+  </section>
+
+  <!-- Sección de experiencia profesional. -->
+  <section class="flex-container">
+    <h3 class="title-section-center">Experiencia profesional</h3>
+    <!-- Experiencia uno. -->
+    <div class="education-experience-box">
+      <img src="./images/experience-one.png" alt="Proyecto encriptador de texto" title="Encriptador de texto" class="experience-image">
+
+      <p class="information-text">Encriptador y desencriptador de texto</p>
+      <p class="highlighted-text">Challenge alura</p>
+
+      <div class="buttons-container">
+        <a href="" title="" target="_blank" 
+           class="anchor-button">Ver repositorio</a>
+        <a href="" title="" target="_blank" 
+           class="anchor-button">Ver demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto, que incluye:
+       *Imagen de referencia.
+       *Formulario de contacto. -->
+  <section class="flex-container">
+    <h3 class="title-section">Contacto</h3>
+
+    <p class="highlighted-text">¿Quieres contactarme?</p>
+    <p>Completa el formulario y me pondre en contacto lo más pronto posible.</p>
+
+    <form action="" class="contact-container">
+
+      <input type="text" placeholder="Nombre" class="input-form">
+
+      <input type="text" placeholder="Correo eléctronico" class="input-form">
+      
+      <input type="text" placeholder="Asunto" class="input-form">
+
+      <textarea name="" id="" cols="30" rows="10" placeholder="Descripción" class="input-form"></textarea>
+
+      <input type="submit" class="button-submit">
+    </form>
+  </section>
+
+  <!-- Sección de pié de página -->
+  <footer>
+    <p class="highlighted-text">&#169; 2024 Brandon Daniel Garita Romero</p>
+  </footer>
+</body>
+</html>
