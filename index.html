@@ -69,7 +69,8 @@
          class="profile-picture">
 
 
-    <h3 class="information-text">Hola, mi nombre es Daniel y soy Desarrollador WEB Front-End.</h3>
+    <h3 class="information-text">Hola, mi nombre es Daniel. Tengo 22 años, soy mexicano y me 
+                                 desempeño como Desarrollador WEB Front-End.</h3>
 
     <p>Soy formado en el <span class="highlighted-text">Instituto Politecnico Nacional</span>
        como <span class="highlighted-text">Técnico en Informática</span> (pasante),
@@ -85,7 +86,7 @@
       <a href="https://www.linkedin.com/in/garita-romero-brandon-daniel-a305222b1" target="_blank" 
          class="external-lin" title="Mi LinkedIn">LinkedIn &#129125;</a>
 
-      <a href="#">Curriculum &#129125;</a>
+      <a href="#">Curriculo &#129125;</a>
     </div>
   </section>
 
@@ -95,7 +96,10 @@
     <h3 class="title-section">Sobre mi</h3>
 
     <p>Soy una persona en constante aprendizaje, con enfoques en el desarrollo web 
-       <span class="highlighted-text">Front-End</span>.<br>  
+       <span class="highlighted-text">Front-End</span>.<br>
+       Además de mejorar constantemente mis habilidades duras (<span class="highlighted-text">hard-skills</span>),
+       me gusta practicar el desarrollo de las habilidades blandas (<span class="highlighted-text">soft-skills</span>).
+       Un poco más estas últimas.
     </p>
   </section>
 
@@ -193,68 +197,81 @@
   <section class="flex-container">
     <h3 class="title-section-center">Formación académica</h3>
 
-    <div class="education-experience-box">
+    <div class="education-box">
       <p class="information-text">Instituto Politécnico Nacional</p>
-      <p>Cecyt 14 "Luis Enrique Erro"</p>
+      <p class="institution-name">Cecyt 14 "Luis Enrique Erro"</p>
       <img src="./images/cecyt.png" alt="Cecyt 14" title="Cecyt 14" class="education-image-cecyt">
-      <p class="information-text">Técnico en informática</p>
+      <p class="tittle-acquired">Técnico en informática <span class="small-text">(Pasante)</span></p>
       <p class="highlighted-text">Concluido</p>
     </div>
 
-    <div class="education-experience-box">
+    <div class="education-box">
       <p class="information-text">Instituto Politécnico Nacional</p>
-      <p>Escuela Superior de Cómputo</p>
+      <p class="institution-name">Escuela Superior de Cómputo</p>
       <img src="./images/escom.png" alt="ESCOM" title="Escuela Superior de Cómputo" class="education-image">
-      <p class="information-text">Ingeniería en sistemas cómputacionales</p>
+      <p class="tittle-acquired">Ingeniería en sistemas cómputacionales</p>
       <p class="highlighted-text">En curso</p>
     </div>
 
-    <divc class="education-experience-box">
+    <div class="education-box">
       <p class="information-text">Oracle & Alura LATAM</p>
-      <p>Grupo 6 ONE-Oracle Next Education</p>
+      <p class="institution-name">Grupo 6 ONE-Oracle Next Education</p>
       <img src="./images/one.png" alt="Oracle & Alura LATAM" title="Oracle & Alura LATAM" class="education-image">
-      <p class="information-text">Desarrollador Front-End Junior</p>
+      <p class="tittle-acquired">Desarrollador Front-End Junior</p>
       <p class="highlighted-text">En curso</p>
-    </divc>
+    </div>
+
+    <div class="education-box">
+      <p class="information-text">CISCO Networking Academy</p>
+      <p class="institution-name">Skills For All</p>
+      <img src="./images/cisco.jpg" alt="CISCO Networking Academy" title="CISCO" class="education-image">
+      <p class="tittle-acquired">Curso JavaScript Essentials 1</p>
+      <p class="highlighted-text">En curso</p>
+    </div>
   </section>
 
   <!-- Sección de experiencia profesional. -->
   <section class="flex-container">
     <h3 class="title-section-center">Experiencia profesional</h3>
     <!-- Experiencia uno. -->
-    <div class="education-experience-box">
-      <img src="./images/experience-one.png" alt="Proyecto encriptador de texto" title="Encriptador de texto" class="experience-image">
+    <div class="experience-box">
+      <img src="./images/experience-one.png" alt="Proyecto encriptador de texto" title="Encriptador de texto" 
+           class="experience-image">
 
       <p class="information-text">Encriptador y desencriptador de texto</p>
-      <p class="highlighted-text">Challenge alura</p>
+      <p class="tittle-acquired">Challenge alura</p>
 
       <div class="buttons-container">
-        <a href="" title="" target="_blank" 
+        <a href="" title="Repositorio de GitHub" target="_blank" 
            class="anchor-button">Ver repositorio</a>
-        <a href="" title="" target="_blank" 
+        <a href="" title="Ver en funcionamiento" target="_blank" 
            class="anchor-button">Ver demo</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección de contacto, que incluye:
-       *Imagen de referencia.
-       *Formulario de contacto. -->
+  <!-- Sección de contacto -->
   <section class="flex-container">
     <h3 class="title-section">Contacto</h3>
+
+    <img src="" alt="" title="" class="img-contact">
 
     <p class="highlighted-text">¿Quieres contactarme?</p>
     <p>Completa el formulario y me pondre en contacto lo más pronto posible.</p>
 
-    <form action="" class="contact-container">
+    <form class="contact-container" id="contactForm">
 
-      <input type="text" placeholder="Nombre" class="input-form">
+      <input type="text" placeholder="Nombre" class="input-form" id="nameUser">
+      <span class="error-field"></span>
 
-      <input type="text" placeholder="Correo eléctronico" class="input-form">
+      <input type="email" placeholder="Correo eléctronico" class="input-form" id="emailUser">
+      <span class="error-field"></span>
       
-      <input type="text" placeholder="Asunto" class="input-form">
+      <input type="text" placeholder="Asunto" class="input-form" id="affairUser">
+      <span class="error-field"></span>
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Descripción" class="input-form"></textarea>
+      <textarea name="" id="descriptionUser" cols="30" rows="10" placeholder="Descripción" class="input-form"></textarea>
+      <span class="error-field"></span>
 
       <input type="submit" class="button-submit">
     </form>
@@ -264,5 +281,7 @@
   <footer>
     <p class="highlighted-text">&#169; 2024 Brandon Daniel Garita Romero</p>
   </footer>
+
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
