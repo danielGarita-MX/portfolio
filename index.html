@@ -31,7 +31,7 @@
 <body>
   <!-- Sección de encabezado. -->
   <header>
-    <h3 class="information-text">Brandon Daniel Garita Romero</h3>
+    <h3 class="important-information">Brandon Daniel Garita Romero</h3>
 
     <nav>
       <ul class="menu-bar">
@@ -40,19 +40,19 @@
         </li>
 
         <li class="item-menu-bar">
-          <a href="#hobbies-section">Habilidades</a>
+          <a href="#skills-section">Habilidades</a>
         </li>
 
         <li class="item-menu-bar">
-          <a href="#skills-section">Pasatiempos</a>
+          <a href="#hobbies-section">Pasatiempos</a>
         </li>
 
         <li class="item-menu-bar">
-          <a href="#">Formación</a>
+          <a href="#formation-section">Formación</a>
         </li>
 
         <li class="item-menu-bar">
-          <a href="#">Proyectos</a>
+          <a href="#projects-section">Proyectos</a>
         </li>
 
         <li class="item-menu-bar">
@@ -64,35 +64,36 @@
 
 
   <!-- Sección de presentación. -->
-  <section class="flex-container">
+  <section class="flex-container main-container">
     <img src="./images/profile-picture.png" alt="Foto de presentación" title="Foto de presentación"
          class="profile-picture">
 
 
-    <h3 class="information-text">Hola, mi nombre es Daniel. Tengo 22 años, soy mexicano y me 
-                                 desempeño como Desarrollador WEB Front-End.</h3>
+    <div class="presentation-container">
+      <h3 class="important-information">Hola, mi nombre es Daniel. Tengo 22 años, soy mexicano y me 
+                                        desempeño como Desarrollador WEB Front-End.</h3>
 
-    <p>Soy formado en el <span class="highlighted-text">Instituto Politecnico Nacional</span>
-       como <span class="highlighted-text">Técnico en Informática</span> (pasante),
-       y actualmente curso la carrera de <span class="highlighted-text">Ingeniería en Sistemas Computacionales</span> 
-       en la <a href="https://www.escom.ipn.mx/" target="_blank" class="external-link"
-                title="Escuela Superior de Cómputo">ESCOM</a>.
-    </p>
+      <p>Soy formado en el <span class="formatted-information">Instituto Politecnico Nacional</span> como 
+         <span class="highlighted-text">Técnico en Informática</span> (pasante),
+         y actualmente curso la carrera de <span class="highlighted-text">Ingeniería en Sistemas Computacionales</span> 
+         en la <span class="formatted-information">Escuela Superior de Cómputo (ESCOM)</span> .
+      </p>
 
-    <div class="social-section">
-      <a href="https://github.com/danielGarita-MX?tab=repositories" target="_blank" 
-         class="external-lin" title="Mi GitHub">GitHub &#129125;</a>
+      <div class="social-section">
+        <a href="https://github.com/danielGarita-MX?tab=repositories" target="_blank" 
+           title="Mi GitHub" class="link-media">GitHub &#129125;</a>
 
-      <a href="https://www.linkedin.com/in/garita-romero-brandon-daniel-a305222b1" target="_blank" 
-         class="external-lin" title="Mi LinkedIn">LinkedIn &#129125;</a>
+        <a href="https://www.linkedin.com/in/garita-romero-brandon-daniel-a305222b1" target="_blank" 
+           title="Mi LinkedIn" class="link-media">LinkedIn &#129125;</a>
 
-      <a href="#">Curriculo &#129125;</a>
+        <a href="#" class="link-media" title="Descarga mi curriculo">Curriculo &#8595;</a>
+      </div>
     </div>
   </section>
 
 
   <!-- Sección de 'sobre mi'. -->
-  <section class="flex-container" id="about-me-section">
+  <section class="flex-container about-me-section" id="about-me-section">
     <h3 class="title-section">Sobre mi</h3>
 
     <p>Soy una persona en constante aprendizaje, con enfoques en el desarrollo web 
@@ -105,176 +106,180 @@
 
 
   <!-- Sección de habilidades y pasatiempos. -->
-  <div class="flex-container" id="hobbies-skills-section">
+  <section class="flex-container" id="hobbies-skills-section">
     <!-- Sección de habilidades. -->
-    <section class="flex-container" id="skills-section">
+    <div class="flex-container" id="skills-section">
       <h3 class="title-section-center">Habilidades</h3>
 
       <div class="skills-hobbies-container">
         <div class="skill-hobbie-box">
           <img src="./images/html-5.png" alt="Icono de HTML5" title="Icono por @Pixel perfect" class="skill-hobbie-icon">
           
-          <p class="skill-hobbie-information">HTML5</p>
+          <p class="skill-hobbie-name">HTML5</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/css-3.png" alt="Icono de CSS3" title="Icono por @Pixel perfect" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">CSS3</p>
+          <p class="skill-hobbie-name">CSS3</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/javascript.png" alt="Icono de JavaScript" title="Icono por @edt.im" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">JavaScript</p>
+          <p class="skill-hobbie-name">JavaScript</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/php.png" alt="Icono de PHP" title="Icono por @Freepik" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">PHP</p>
+          <p class="skill-hobbie-name">PHP</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/c.png" alt="Icono de C" title="Icono por @High Quality Icons" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Lenguaje C</p>
+          <p class="skill-hobbie-name">Lenguaje C</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/cpp.png" alt="Icono de C++" title="Icono por @Freepik" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Lenguaje C++</p>
+          <p class="skill-hobbie-name">Lenguaje C++</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/modeling.png" alt="Herramientas de modelado" title="Icono por @khld939" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Herramientas de modelado</p>
+          <p class="skill-hobbie-name">Herramientas de modelado</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/documentation.png" alt="Herramientas de documentación" title="Icono por @Anggara" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Herramientas de documentación</p>
+          <p class="skill-hobbie-name">Herramientas de documentación</p>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Sección de pasatiempos. -->
-    <section class="flex-container"  id="hobbies-section">
+    <div class="flex-container"  id="hobbies-section">
       <h3  class="title-section-center">Pasatiempos</h3>
 
       <div class="skills-hobbies-container">
         <div class="skill-hobbie-box">
           <img src="./images/music.png" alt="Icono de Música" title="Icono por @Yellow Frog Factory" class="skill-hobbie-icon">
           
-          <p class="skill-hobbie-information">Música</p>
+          <p class="skill-hobbie-name">Música</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/mobile-game.png" alt="Icono de videojuegos" title="Icono por @Muhammad Atif" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Videojuegos móviles</p>
+          <p class="skill-hobbie-name">Videojuegos móviles</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/videoblogs.png" alt="Icono de videos" title="Icono por @Anggara" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Videoblogs</p>
+          <p class="skill-hobbie-name">Videoblogs</p>
         </div>
 
         <div class="skill-hobbie-box">
           <img src="./images/walk.png" alt="Icono de paseo" title="Icono por @Freepik" class="skill-hobbie-icon">
 
-          <p class="skill-hobbie-information">Paseos cortos</p>
+          <p class="skill-hobbie-name">Paseos cortos</p>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Sección de formación académica. -->
-  <section class="flex-container">
+  <section class="flex-container education-section" id="formation-section">
     <h3 class="title-section-center">Formación académica</h3>
 
-    <div class="education-box">
-      <p class="information-text">Instituto Politécnico Nacional</p>
-      <p class="institution-name">Cecyt 14 "Luis Enrique Erro"</p>
-      <img src="./images/cecyt.png" alt="Cecyt 14" title="Cecyt 14" class="education-image-cecyt">
-      <p class="tittle-acquired">Técnico en informática <span class="small-text">(Pasante)</span></p>
-      <p class="highlighted-text">Concluido</p>
-    </div>
+    <div class="education-container">
+      <div class="education-experience-box">
+        <img src="./images/ipn.jpg" alt="Cecyt 14" title="Cecyt 14" class="education-image">
+        <p class="highlighted-text">Técnico en informática <span class="small-text">(Pasante)</span></p>
+        <p class="highlighted-text">2017 - Cecyt 14 IPN</p>
+      </div>
 
-    <div class="education-box">
-      <p class="information-text">Instituto Politécnico Nacional</p>
-      <p class="institution-name">Escuela Superior de Cómputo</p>
-      <img src="./images/escom.png" alt="ESCOM" title="Escuela Superior de Cómputo" class="education-image">
-      <p class="tittle-acquired">Ingeniería en sistemas cómputacionales</p>
-      <p class="highlighted-text">En curso</p>
-    </div>
+      <div class="education-experience-box">
+        <img src="./images/escom.png" alt="ESCOM" title="Escuela Superior de Cómputo" class="education-image">
+        <p class="highlighted-text">Ingeniería en sistemas cómputacionales</p>
+        <p class="highlighted-text">En curso - ESCOM IPN</p>
+      </div>
 
-    <div class="education-box">
-      <p class="information-text">Oracle & Alura LATAM</p>
-      <p class="institution-name">Grupo 6 ONE-Oracle Next Education</p>
-      <img src="./images/one.png" alt="Oracle & Alura LATAM" title="Oracle & Alura LATAM" class="education-image">
-      <p class="tittle-acquired">Desarrollador Front-End Junior</p>
-      <p class="highlighted-text">En curso</p>
-    </div>
+      <div class="education-experience-box">
+        <img src="./images/one.png" alt="Oracle & Alura LATAM" title="Oracle & Alura LATAM" class="education-image">
+        <p class="highlighted-text">Desarrollador Front-End Junior</p>
+        <p class="highlighted-text">En curso - ORACLE + Alura LATAM</p>
+      </div>
 
-    <div class="education-box">
-      <p class="information-text">CISCO Networking Academy</p>
-      <p class="institution-name">Skills For All</p>
-      <img src="./images/cisco.jpg" alt="CISCO Networking Academy" title="CISCO" class="education-image">
-      <p class="tittle-acquired">Curso JavaScript Essentials 1</p>
-      <p class="highlighted-text">En curso</p>
+      <div class="education-experience-box">
+        <img src="./images/cisco.jpg" alt="CISCO Networking Academy" title="CISCO" class="education-image">
+        <p class="highlighted-text">Curso JavaScript Essentials 1</p>
+        <p class="highlighted-text">En curso - CISCO</p>
+      </div>
     </div>
   </section>
 
   <!-- Sección de experiencia profesional. -->
-  <section class="flex-container">
+  <section class="flex-container" id="projects-section">
     <h3 class="title-section-center">Experiencia profesional</h3>
     <!-- Experiencia uno. -->
-    <div class="experience-box">
+    <div class="education-experience-box experience-container">
       <img src="./images/experience-one.png" alt="Proyecto encriptador de texto" title="Encriptador de texto" 
            class="experience-image">
+      
+      <div class="information-buttons">
+        <p class="description-experience">Encriptador y desencriptador de texto</p>
+        <p class="description-experience">Challenge alura</p>
 
-      <p class="information-text">Encriptador y desencriptador de texto</p>
-      <p class="tittle-acquired">Challenge alura</p>
-
-      <div class="buttons-container">
-        <a href="" title="Repositorio de GitHub" target="_blank" 
-           class="anchor-button">Ver repositorio</a>
-        <a href="" title="Ver en funcionamiento" target="_blank" 
-           class="anchor-button">Ver demo</a>
+        <div class="buttons-container">
+          <a href="https://github.com/danielGarita-MX/encryptor-decryptor-text" title="Repositorio de GitHub" target="_blank" 
+            class="anchor-button">Ver repositorio</a>
+          <a href="https://danielgarita-mx.github.io/encryptor-decryptor-text/" title="Ver en funcionamiento" target="_blank" 
+            class="anchor-button">Ver demo</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Sección de contacto -->
-  <section class="flex-container">
-    <h3 class="title-section">Contacto</h3>
+  <section class="flex-container contact-section">
+    <div class="form-img-container">
+      <div class="img-container">
+        <img src="./images/send-message.png" alt="Enviar mensaje" title="Enviar mensaje" class="img-contact">
+      </div>
 
-    <img src="" alt="" title="" class="img-contact">
+      <div class="flex-container form-container">
+        <h3 class="title-section">Contacto</h3>
+        <p class="important-information">¿Quieres contactarme?</p>
+        <p>Completa el formulario y me pondre en contacto lo más pronto posible.</p>
 
-    <p class="highlighted-text">¿Quieres contactarme?</p>
-    <p>Completa el formulario y me pondre en contacto lo más pronto posible.</p>
+        <form class="contact-container" id="contactForm">
+          <input type="text" placeholder="Nombre" class="input-form" id="nameUser"  maxlength="50"
+                 required>
+          <span class="error-field">&#9888; Ingresa un nombre valido de hasta 50 carácteres.</span>
 
-    <form class="contact-container" id="contactForm">
+          <input type="email" placeholder="Correo eléctronico" class="input-form" id="emailUser"
+                 required>
+          <span class="error-field">&#9888; Ingresa una dirección de correo eléctronico valida</span>
+          
+          <input type="text" placeholder="Asunto" class="input-form" id="affairUser"  maxlength="30"
+                 required>
+          <span class="error-field">&#9888; Ingresa un asunto valido de hasta 30 carácteres</span>
 
-      <input type="text" placeholder="Nombre" class="input-form" id="nameUser">
-      <span class="error-field"></span>
+          <textarea id="descriptionUser" cols="30" rows="10" placeholder="Descripción" class="input-form"
+                    required maxlength="300"></textarea>
+          <span class="error-field">&#9888; Ingresa una descripción valida de hasta 300 carácteres</span>
 
-      <input type="email" placeholder="Correo eléctronico" class="input-form" id="emailUser">
-      <span class="error-field"></span>
-      
-      <input type="text" placeholder="Asunto" class="input-form" id="affairUser">
-      <span class="error-field"></span>
-
-      <textarea name="" id="descriptionUser" cols="30" rows="10" placeholder="Descripción" class="input-form"></textarea>
-      <span class="error-field"></span>
-
-      <input type="submit" class="button-submit">
-    </form>
+          <input type="submit" class="button-submit" value="Enviar mensaje">
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- Sección de pié de página -->

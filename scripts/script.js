@@ -9,7 +9,7 @@ const inputEmail = document.getElementById('emailUser');
 const inputAffair = document.getElementById('affairUser');
 const inputDescription = document.getElementById('descriptionUser');
 
-/* Variables que almacenan los mensasjes de error */
+/* Variable para almacenar en un objeto los diferentes mensajes de error */
 const errorMessage = document.querySelectorAll('.error-field');
 
 /* La expresión regular valida el campo de 'nombre' y 'asunto':
@@ -18,7 +18,7 @@ const errorMessage = document.querySelectorAll('.error-field');
       captura (no se toma en cuenta para el resultado) que indica que puede haber un espacio seguido de
       más letras (al menos una) y esto se puede repetir 0 o más veces siempre que la cadena termine
       con un carácter y no con un espacio. */
-const regexName = /^(?=.{1,50}$)[a-zA-ZáéíóúÁÉÍÓÚ]+(?:\s[a-zA-ZáéíóúÁÉÍÓÚ]+)*$/
+const regexName = /^(?=.{1,50}$)[a-zA-ZáéíóúÁÉÍÓÚñÑ]+(?:\s[a-zA-ZáéíóúÁÉÍÓÚ]+)*$/
 
 /* Expresión regular para validar el campo de correo eléctronico */
 const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -38,34 +38,34 @@ formControl.addEventListener('submit', (e) => {
   
   /* Validación del nombre */
   if(!regexName.test(inputName.value)){
-    showMessage(errorMessage[0], 'Letras mayúsculas y minúsculas de 1 a 50 carácteres');
+    showElement(errorMessage[0], true);
   }else{
-    showMessage(errorMessage[0], '');
+    showElement(errorMessage[0], false);
   }
 
   /* Validación del email */
   if(!regexEmail.test(inputEmail.value)){
-    showMessage(errorMessage[1], 'Ingresa una dirección de correo eléctronico valida');
+    showElement(errorMessage[1], true);
   }else{
-    showMessage(errorMessage[1], '');
+    showElement(errorMessage[1], false);
   }
 
   /* Validación del asunto */
   if(!regexName.test(inputAffair.value)){
-    showMessage(errorMessage[2], 'Letras mayúsculas y minúsculas de 1 a 50 carácteres');
+    showElement(errorMessage[2], true);
   }else{
-    showMessage(errorMessage[2], '');
+    showElement(errorMessage[2], false);
   }
 
   /* Validación de la descripción */
   if(!regexDescription.test(inputDescription.value)){
-    showMessage(errorMessage[3], 'Letras mayúsculas y minúsculas de 1 a 300 carácteres');
+    showElement(errorMessage[3], true);
   }else{
-    showMessage(errorMessage[3], '');
+    showElement(errorMessage[3], false);
   }
 });
 
-/* Función que modifica el DOM insertando texto a un elemento */
-function showMessage(element, message){
-  element.innerHTML = message;
+/* Función que muestra (true) u oculta (false) un elemento */
+function showElement (element, value) {
+  return value == true ? element.style.display = "list-item" : element.style.display = "none";
 }

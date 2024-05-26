@@ -1,9 +1,13 @@
 /* Hoja de estilos que permite eliminar los estilos de página
    establecidos de manera predeterminada por los navegadores */
 
-   *, *:after, *:before 
-   {margin: 0;padding: 0;text-decoration: none;}
-   
-   body{font-size: 100%;list-style-type: none;font-family: "Source Code Pro", monospace;}
+html {font-size: 14px;}
 
-   li{list-style: none;}
+*, *:after, *:before 
+{margin: 0;padding: 0;text-decoration: none;}
+   
+body{font-size: 100%;list-style-type: none;font-family: "Source Code Pro", monospace;}
+
+li{list-style: none;}
+
+a{color: black;}

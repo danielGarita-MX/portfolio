@@ -6,47 +6,90 @@
 
 
 /* E S T I L O S  P A R A  T O D A  L A  P Á G I N A  ( U N I V E R S A L E S ) */
-/* Cuerpo de la página */
+/* C U E R P O  D E  L A  P Á G I N A */
 body {
+  /* Alineación de los elementos en columna */
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  /* Tipografía y color de página predeterminados */
   font-family: "Schibsted Grotesk", sans-serif;
+  background: #F8F8F8;
 }
 
-/* Estilos para los textos */
+/* Estilos para los parrafos de  texto */
 p {
+  /* Tamaño predeterminado de letra y espaciado */
+  font-size: 1rem;
+  margin: 2.5px 0;
+
+  /* Distancia entre renglones de un parráfo */
   line-height: 1.5;
-  font-size: 15px;
+}
+
+/* Estilo del contenedor de cada sección */
+.flex-container {
+  /* Contenido organizado en columnas y espaciado. */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  /* Relleno interno para separar el contenido del borde
+     de la página */
+  padding: 15px;
+}
+
+/* Información a destacar */
+.important-information {
+  /* Tamaño de letra, tipografía y negritas */
+  font-size: 1.13rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+/* Información con formato en italica */
+.formatted-information {
+  /* Letra en italica */
+  font-style: italic;
+}
+
+/* Texto resaltado para mostrar información puntual */
+.highlighted-text {
+  /* Estilo en italica con negritas */
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Titulo de la sección */
+.title-section {
+  /* Tipografía, tamaño y negritas */
+  font-family: "Poppins", sans-serif;
+  font-size: 1.66rem;
+  font-weight: 600;
+}
+
+/* Titulo de la sección centrado */
+.title-section-center {
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.66rem;
+  font-weight: 600;
 }
 
 
 
 /* E S T I L O S  P A R A  L A  V E R S I Ó N  M Ó V I L */
-/* Encabezado */
+/* S E C C I Ó N  D E  E N C A B E Z A D O */
 header {
-  /* Despliegue flexible en linea con los elementos separados
-     por el mismo espacio y alineados al centro. */
+  /* Elementos alineados con el mismo espacio y al centro */
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /* Espacio de separación */
-  padding: 10px;
-}
-
-/* Información a destacar como si fuese un 'titulo' */
-.information-text {
-  /* Tipografía, tamaño y peso de la misma para los titulos */
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-/* Barra de navegación */
-.menu-bar {
-  /* Alineación flexible de los elementos. */
-  display: flex;
+  /* Relleno del contenedor */
+  padding: 15px;
 }
 
 /* Elementos de la barra de navegación no desplegables */
@@ -58,232 +101,652 @@ header {
   display: none;
 }
 
-/* Elemento de contácto */
-.item-menu-bar:nth-child(6){
-  font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid black;
+/* Elemento de contacto */
+.item-menu-bar:nth-child(6) {
+  /* Reglas para darle forma de botón */
   padding: 5px;
   border-radius: 5px;
+
+  /* Reglas para estilizar el botón */
+  border: 1px solid black;
+  background: #CCCCCC;
+}
+
+/* Texto de la barra de navegación */
+.item-menu-bar > a {
+  /* Tipografía, tamaño de letra y negrita */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  /* Color de la letra */
+  color: black;
 }
 
 
 
-/* Sección de presentación */
-.flex-container {
-  /* Display flex con contenido organizado en columnas
-     y espaciado. */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  /* Relleno interno para separar el contenido del borde
-     de la página */
-  padding: 15px;
-}
-
+/* S E C C I Ó N  D E  P R E S E N T A C I Ó N */
 /* Fotografía de presentación */
 .profile-picture {
+  /* Reglas para darle forma circular */
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
+
+  /* Alineación propia al centro del contenedor */
   align-self: center;
 }
 
-/* Texto resaltado para mostrar información importante */
-.highlighted-text {
-  font-style: italic;
-  font-weight: 600;
-}
-
-/* Enlaces externos */
-.external-link {
-  font-style: italic;
-}
-
-/* Sección de redes sociales */
+/* Contenedor de redes sociales */
 .social-section {
+  /* Alineación horizontal de los elementos con espaciado */
   display: flex;
   justify-content: space-around;
+
+  /* Relleno interno para dar espacio */
+  padding: 10px;
+}
+
+/* Enlaces a redes sociales */
+.link-media {
+  font-weight: 500;
 }
 
 
 
-/* Sección de 'sobre mi' */
-.title-section {
-  /* Tipografía, tamaño y peso de la misma para los titulos */
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
+/* S E C C I Ó N  D E  ' S O B R E  M I ' */
+/* Contenedor de la decripción */
+.about-me-section {
+  /* Color de fondo */
+  background: #CCCCCC;
 }
 
 
 
-/* Sección de habilidades y pasatiempos */
-.title-section-center {
-  align-self: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-}
-
+/* S E C C I Ó N  D E  H A B I L I D A D E S  /  P A S A T I E M P O S */
+/* Contenedor de las habilidades y pasatiempos */
 .skills-hobbies-container {
+  /* Alineación horizontal con quiebre cuando el espacio se agota y espaciado vertical */
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
-  justify-content: space-around;
+
+  /* Espaciado horizontal y alineación al centro */
+  justify-content: space-between;
   align-items: center;
 }
 
+/* Contenedor individual de habilidad / pasatiempo */
 .skill-hobbie-box {
-  border: 2px solid blue;
-  width: 198px;
-  height: 140px;
+  /* Reglas para dar forma de caja */
+  width: 200px;
+  height: 120px;
+  padding: 10px;
+
+  /* Alineación vertical de los elementos */
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  /* Distribución del tamaño de la caja */
   box-sizing: border-box;
-  gap: 15px;
+
+  /* Reglas de estilo */
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #E0E0E0;
 }
 
+/* Icono de representación de la habilidad / pasatiempo */
 .skill-hobbie-icon {
-  width: 66px;
-  height: 65px;
+  /* Tamaño del icono */
+  width: 50px;
+  height: 50px;
+
+  /* Alineación del icono */
   align-self: center;
 }
 
-.skill-hobbie-information {
+/* Nombre de la habilidad / pasatiempo */
+.skill-hobbie-name {
+  /* Tipografía, tamaño, negritas y alineación */
   font-family: "Ubuntu", sans-serif;
-  font-size: 13px;
+  font-size: 0.86rem;
   font-weight: 500;
   text-align: center;
 }
 
 
-/* Sección de formación académica */
-.education-box {
-  width: 80%;
-  height: auto;
-  border: 2px solid blue;
-  padding: 10px;
-  box-sizing: border-box;
+
+/* S E C C I Ó N  D E  F O R M A C I Ó N  A C A D É M I C A */
+/* Contenedor general de formación académica */
+.education-section {
+  /* Color de fondo */
+  background: #CCCCCC;
+}
+
+/* Contenedor de la formación acádemica (solo las formaciones) */
+.education-container {
+  /* Alineación vertical con espaciado */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin: 0 auto;
-}
-
-.institution-name {
-  font-style: italic;
-  font-weight: 500;
-}
-
-.education-image-cecyt {
-  width: 40%;
-  height: 130px;
-}
-
-.tittle-acquired {
-  font-size: 14px;
-  font-style: italic;
-  font-weight: bolder;
-}
-
-.small-text{
-  font-size: 13px;
-}
-
-.education-image {
-  width: 60%;
-  height: 120px;
-}
-
-
-
-/* Sección de experiencia profesional */
-.experience-box {
-  border: 2px solid blue;
-  padding: 10px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 15px;
+}
+
+/* Contenedor individual de cada formación */
+.education-experience-box {
+  /* Reglas para dar la forma de caja */
+  width: 80%;
+  padding: 15px;
+
+  /* Distribución del tamaño de la caja */
+  box-sizing: border-box;
+
+  /* Alineación de los elementos en columna centrados con espaciado */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  /* Alineación horizontal del contenedor */
   margin: 0 auto;
 }
 
-.experience-image {
+/* Imagen de la institución educativa */
+.education-image {
+  /* Ancho y alto de la imagen */
   width: 100%;
-  height: 220px;
+  height: 160px;
+
+  /* Alineación de la imagen */
+  align-self: center;
+
+  /* Reglas de estilo */
+  border-radius: 10px;
 }
 
-.experience-image ~ p {
-  align-self: flex-start;
+/* Texto de enfásis mas pequeño */
+.small-text{
+  font-size: 0.86rem;
 }
 
+
+
+/* S E C C I Ó N  D E  E X P E R I E N C I A  P R O F E S I O N A L */
+/* Contenedor de la experiencia */
+.experience-container {
+  /* Ancho total del contenedor */
+  width: 100%;
+}
+
+/* Imagen de referencia del proyecto */
+.experience-image {
+  /* Ancho y alto */
+  width: 100%;
+  height: 280px;
+
+  /* Reglas de estilo */
+  border-radius: 10px;
+}
+
+/* Estilos para la descripción de los proyectos */
+.description-experience {
+  /* Tipografía, tamaño y negritas */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  /* Margenes */
+  margin: 5px 0;
+}
+
+/* Contenedor de los botones de acción */
 .buttons-container {
+  width: 100%;
+  /* Alineación horizontal con espaciado */
   display: flex;
   gap: 30px;
+
+  /* Cuando el espacio se reduce, los botones se colocan uno debajo del otro */
+  flex-flow: row wrap;
+
+  /* Relleno */
+  padding: 5px 0;
 }
 
+/* Estilos de los botones */
 .anchor-button {
+  /* Reglas para dar la forma de botón */
   width: 120px;
   height: 20px;
-  border: 2px solid blue;
   padding: 15px;
+
+  /* Reglas de estilo */
+  border: 2px solid #2A3E9E;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px gray;
+
+  /* Reglas de estilo del texto */
   text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  color: black;
+
+  /* Tiempo de transición */
+  transition: 0.5s;
 }
 
+/* Botón de "ver demo" */
 .anchor-button:nth-child(2) {
-  background: lightcyan;
+  /* Color de fondo y de letra */
+  background: #0033CC;
+  color: #FFFFFF;
 }
 
 
 
-/* Sección de contacto */
-.img-contact {
+/* S E C C I Ó N  D E  C O N T A C T O */
+/* Contenedor del formulario de contacto */
+.contact-section {
+  background: #CCCCCC;
+}
+
+/* La imagen no debe mostrarse en la versión de móviles.
+   Los mensajes de error estan ocultos por defecto (solo se mostrarán cuando ocurran) */
+.img-contact, .error-field {
   display: none;
 }
 
+/* Estilos para el fomulario */
 .contact-container {
+  /* Alineación horizontal con espaciado */
   display: flex;
   flex-flow: column wrap;
   gap: 15px;
 }
 
+/* Estilos para las entradas */
 .input-form {
-  padding: 10px;
+  /* Relleno interno */
+  padding: 15px;
+
+  /* Distribución del tamaño */
   box-sizing: border-box;
+
+  /* Estilo para la etiqueta 'textarea' */
   resize: none;
+
+  /* Reglas de estilo */
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #F8F8F8;
+  font-size: 1.03rem;
 }
 
+/* Estilos cuando el usuario se posiciona sobre el campo de entrada */
+.input-form:focus {
+  /* El campo resalta con un sombreado */
+  transform: translateY(-2px);
+  box-shadow: 3.5px 3.5px 7px black;
+  background: #FFFFFF;
+}
+
+/* Estilos para mostrar los errores */
+.error-field {
+  /* Tipografía y tamaño de la letra */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  /* Espaciado */
+  margin: 2px 10px;
+
+  /* Reglas de estilo */
+  color: #CC3333;
+}
+
+/* Estilos para el botón de envio */
 .button-submit {
+  /* Reglas para dar forma de botón */
   width: 180px;
   height: 45px;
   padding: 5px;
+
+  /* Distribución del tamaño asignado */
   box-sizing: border-box;
+
+  /* ALineación individual */
   align-self: center;
-  margin: 10px 0 0 0;
+
+  /* Margen superior */
+  margin-top: 10px;
+
+  /* Tamaño de la letra */
+  font-size: 1rem;
+
+  /* Reglas de estilo */
+  border: 1px solid #2A3E9E;
+  background: #0033CC;
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 5px;
+
+  /* Estilos de texto */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #FFFFFF;
+
+  /* Tiempo de transición */
+  transition: 0.5s;
 }
 
 
 
-/* Sección de pié de página */
+/* S E C C I Ó N  D E  P I É  D E  P Á G I N A */
 footer {
-  padding: 20px;
+  /* Relleno del contenedor */
+  padding: 10px 0 30px 0;
+
+  /* Alineación del texto */
   text-align: center;
 }
 
 
-/* Espacio para trabajar con 'media queries' */
-/* E S T I L O S  P A R A  L A  V E R S I Ó N  D E  T A B L E T */
-@media (min-width: 768px){
 
+/* E S T I L O S R E S P O N S I V O S */
+/* Estilos para la versión de tablet */
+@media (min-width: 768px) {
+  /* Cambio del tamaño raíz de la letra para escalar todo el documento */
+  html {
+    font-size: 16px;
+  }
+
+  /* Elemento de contacto */
+  .item-menu-bar:nth-child(6) {
+    /* Botón más grande */
+    width: 100px;
+
+    padding: 7px;
+
+    /* Texto alineado al centro */
+    text-align: center;
+  }
+
+  /* Cambio en el despliege de la información de la sección 'presentación' */
+  .main-container {
+    /* Despliegue en fila con los elementos invertidos y espaciado */
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  /* Espacio para mostrar la información */
+  .presentation-container {
+    /* Ancho del contenedor */
+    width: 70%;
+  }
+
+  /* Fotografía de presentación más grande */
+  .profile-picture {
+    /* Reglas para darle forma circular */
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Ajuste de la sección de redes sociales */
+  .social-section {
+    padding: 15px;
+  }
+
+  /* Cambio en el despliegue de la formación acádemica */
+  .education-container {
+    /* Alineación horizontal con espaciado */
+    flex-flow: row wrap;
+  }
+
+  /* Cambio en el tamaño de cada caja de educación */
+  .education-experience-box {
+    /* Ancho de la caja */
+    width: 30%;
+  }
+
+  /* Las cajas de experiencia aumentan su tamaño */
+  .experience-container {
+    width: 95%;
+  }
+
+  /* Modificación tamaño de botón */
+  .anchor-button {
+    /* Reglas para dar la forma de botón */
+    width: 140px;
+  }
+
+
+  /* Aumento de tamaño de la imagen */
+  .experience-image {
+    height: 400px;
+  }
+
+  /* Aumento de tamaño para botón de envio */
+  .button-submit {
+    /* Reglas para dar forma de botón */
+    width: 170px;
+    height: 50px;
+  }
 }
 
-/* E S T I L O S  P A R A  L A  V E R S I Ó N  D E  E S C R I T O R I O  */
+/* Estilos para la versión de escritorio  */
 @media (min-width: 1200px){
-  
+   /* Cambio del tamaño raíz de la letra para escalar todo el documento */
+   html {
+    font-size: 18px;
+  }
+
+  /* Organización de los elementos de navegación */
+  .menu-bar {
+    /* Alineación horizontal con espaciado y al centro */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Elementos de la barra de navegación no desplegables */
+  .item-menu-bar:nth-child(1),
+  .item-menu-bar:nth-child(2),
+  .item-menu-bar:nth-child(3),
+  .item-menu-bar:nth-child(4),
+  .item-menu-bar:nth-child(5) {
+    display: list-item;
+  }
+
+  /* Elemento de contacto */
+  .item-menu-bar:nth-child(6) {
+    /* Botón más grande */
+    width: 110px;
+
+    padding: 9px;
+
+    /* Texto alineado al centro */
+    text-align: center;
+
+    /* Tiempo de transición */
+    transition: 0.5s;
+  }
+
+  /* Animación al pasar el ratón sobre un elemento de la barra de navegación */
+  .item-menu-bar:nth-child(1):hover,
+  .item-menu-bar:nth-child(2):hover,
+  .item-menu-bar:nth-child(3):hover,
+  .item-menu-bar:nth-child(4):hover,
+  .item-menu-bar:nth-child(5):hover,
+  .link-media:hover {
+    border-bottom: 2px solid #CC3333;
+    transform: translateY(-2px);
+  }
+
+  /* Animación para el botón de contacto */
+  .item-menu-bar:nth-child(6):hover {
+    /* Reglas de estilo */
+    transform: translateY(-2px);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #CCCCCC;
+    background: #E0E0E0;
+  }
+
+  /* Cambio en el despliege de la información de la sección 'presentación' */
+  .main-container {
+    /* Despliegue en fila con los elementos invertidos y espaciado */
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  /* Espacio para mostrar la información */
+  .presentation-container {
+    /* Ancho del contenedor */
+    width: 70%;
+  }
+
+  /* Fotografía de presentación más grande */
+  .profile-picture {
+    /* Reglas para darle forma circular */
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Contenedor de los enlaces a redes sociales */
+  .social-section {
+    /* Espaciado de los enlaces a redes sociales */
+    padding: 30px;
+  }
+
+  /* Contenedor individual de cada habilidad / pasatiempo */
+  .skill-hobbie-box {
+    /* Reglas para dar forma de caja */
+    width: 170px;
+    height: 120px;
+
+    /* Tiempo de transición de la animación */
+    transition: 0.5s;
+  }
+
+  /* Animación al pasar sobre el elemento */
+  .skill-hobbie-box:hover {
+    /* Cambios realizados */
+    transform: translateY(-5px);
+    background: linear-gradient(#8196EB 10%, #FFB1B1);
+    
+  }
+
+  /* Cambio en el despliegue de la formación acádemica */
+  .education-container {
+    /* Alineación horizontal con espaciado */
+    flex-flow: row wrap;
+  }
+
+  /* Cambio en el tamaño de cada caja de educación */
+  .education-experience-box {
+    /* Ancho de la caja */
+    width: 30%;
+  }
+
+  /* Las cajas de experiencia aumentan su tamaño */
+  .experience-container {
+    /* Ocupa todo el ancho */
+    width: 90%;
+
+    /* Alineación horizontal de los elementos centrados sobre el eje 'y' y espaciados */
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+  }
+
+  /* Ajuste de tamaño de la imagen */
+  .experience-image {
+    /* Ancho y alto de la imagen */
+    width: 50%;
+    height: 400px;
+  }
+
+  /* Ajuste de el texto con los botones */
+  .information-buttons {
+    /* Ancho y alto del contenedor */
+    width: 45%;
+    height: 400px;
+
+    /* Alineación en columnas con centrado vertical y espaciado */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Ajuste de los botones de acción */
+  .buttons-container {
+    /* Alineación de los elementos al inicio con espaciado */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    /* Relleno del contenedor */
+    padding: 5px 0;
+  }
+
+  /* Estilos de los botones */
+  .anchor-button {
+    /* Reglas para dar la forma de botón */
+    width: 160px;
+  }
+
+  /* Estilos de los botones de experiencia profesional al pasar el ratón sobre de */
+  .anchor-button:hover, .button-submit:hover{
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 11px gray;
+  }
+
+  /* Contenedor del formulario */
+  .form-container {
+    width: 50%;
+  }
+
+  /* Contenedor de imagen y formulario */
+  .form-img-container {
+    /* Alineación horizontal con espaciado */
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+
+    /* Relleno interno */
+    padding: 50px;
+  }
+
+  /* Estilos para el contenedor de la imagen */
+  .img-container {
+    /* Ancho del contenedor */
+    width: 45%;
+
+    /* Alineación central (horizontal y vertical) de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Imagen con textura de fondo */
+    background-image: url(../images/background.jpg);
+  }
+
+  /* Imagen que acompaña al formulario */
+  .img-contact {
+    /* La imagen debe mostrarse */
+    display: list-item;
+
+    /* Formato de la imagen */
+    width: 25%;
+  }
+
+  /* Aumento de tamaño para botón de envio */
+  .button-submit {
+    /* Reglas para dar forma de botón */
+    width: 170px;
+    height: 50px;
+  } 
 }
