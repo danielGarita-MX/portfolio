@@ -22,7 +22,7 @@ body {
 p {
   /* Tamaño predeterminado de letra y espaciado */
   font-size: 1rem;
-  margin: 2.5px 0;
+  margin: 1.5px 0;
 
   /* Distancia entre renglones de un parráfo */
   line-height: 1.5;
@@ -169,11 +169,10 @@ header {
   /* Alineación horizontal con quiebre cuando el espacio se agota y espaciado vertical */
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
+  gap: 18px;
 
   /* Espaciado horizontal y alineación al centro */
   justify-content: space-between;
-  align-items: center;
 }
 
 /* Contenedor individual de habilidad / pasatiempo */
@@ -186,7 +185,7 @@ header {
   /* Alineación vertical de los elementos */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   /* Distribución del tamaño de la caja */
   box-sizing: border-box;
@@ -195,6 +194,9 @@ header {
   background: #FFFFFF;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #E0E0E0;
+
+  /* Tiempo de transición */
+  transition: 0.5s;
 }
 
 /* Icono de representación de la habilidad / pasatiempo */
@@ -457,6 +459,23 @@ footer {
 
 
 /* E S T I L O S R E S P O N S I V O S */
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 477px) {
+  /* Contenedor de las habilidades y pasatiempos */
+  .skills-hobbies-container {
+    /* Alineación al centro */
+    justify-content: center;
+  }
+
+  /* Contenedor individual de habilidad / pasatiempo */
+  .skill-hobbie-box {
+    /* Reglas para dar forma de caja */
+    width: 150px;
+    height: 100px;
+  }
+
+}
+
 /* Estilos para la versión de tablet */
 @media (min-width: 768px) {
   /* Cambio del tamaño raíz de la letra para escalar todo el documento */
@@ -538,7 +557,7 @@ footer {
 }
 
 /* Estilos para la versión de escritorio  */
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
    /* Cambio del tamaño raíz de la letra para escalar todo el documento */
    html {
     font-size: 18px;
@@ -626,9 +645,6 @@ footer {
     /* Reglas para dar forma de caja */
     width: 170px;
     height: 120px;
-
-    /* Tiempo de transición de la animación */
-    transition: 0.5s;
   }
 
   /* Animación al pasar sobre el elemento */
